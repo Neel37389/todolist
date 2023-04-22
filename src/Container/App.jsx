@@ -20,14 +20,23 @@ class App extends Component {
     this.setState({ item: [...item, newItem], message: "" });
   };
 
+  onHandleDelete = (index) => {
+    const { item } = this.state;
+    const newItemList = item.filter((item, i) => i !== index);
+    this.setState({ item: newItemList });
+  };
+
   render() {
     return (
       <div>
         <InputBox
-          onHanleChange={this.onHandleChange}
+          onHandleChange={this.onHandleChange}
           onHandleClick={this.onHandleClick}
         />
-        <InputList toDoItem={this.state.item} />
+        <InputList
+          toDoItem={this.state.item}
+          onHandleDelete={this.onHandleDelete}
+        />
       </div>
     );
   }
