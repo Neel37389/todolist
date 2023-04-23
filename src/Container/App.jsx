@@ -3,7 +3,6 @@ import InputBox from "../Component/InputBox";
 import InputList from "../Component/InputList";
 import "./App.css";
 
-
 class App extends Component {
   constructor() {
     super();

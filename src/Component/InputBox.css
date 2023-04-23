@@ -1,0 +1,22 @@
+.input-box {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  flex-grow: 1;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+button {
+  margin-left: 10px;
+  font-size: 30px;
+  color: black;
+  border: none;
+  cursor: pointer;
+}

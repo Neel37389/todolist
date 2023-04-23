@@ -1,20 +1,18 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import "./InputList.css";
 
 const InputList = ({ toDoItem, onHandleDelete }) => {
   return (
     <div>
       {toDoItem.map((item, index) => (
-        <div
-          key={index}
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            marginTop: "20px",
-          }}
-        >
+        <div key={index} className="list">
           <input type="checkbox" />
-          <p style={{ margin: "20px" }}>{item.message}</p>
-          <button style={{ margin: "20px" }} onClick={() => onHandleDelete(index)}>Delete</button>
+          <p>{item.message}</p>
+          <button onClick={() => onHandleDelete(index)}>
+            <FontAwesomeIcon icon={faTrash} />
+          </button>
         </div>
       ))}
     </div>
