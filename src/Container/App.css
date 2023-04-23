@@ -1,3 +1,12 @@
 :root {
   color: black;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  background: linear-gradient(to right, rgb(168, 203, 109), rgb(251, 104, 97));
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
 }

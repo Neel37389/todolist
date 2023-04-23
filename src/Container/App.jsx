@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import InputBox from "../Component/InputBox";
 import InputList from "../Component/InputList";
+import "./App.css";
+
 
 class App extends Component {
   constructor() {
@@ -29,6 +31,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <h1>ToDo List</h1>
         <InputBox
           onHandleChange={this.onHandleChange}
           onHandleClick={this.onHandleClick}
